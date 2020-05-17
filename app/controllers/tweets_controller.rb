@@ -7,7 +7,6 @@ class TweetsController < ApplicationController
   end
   
   def new
-    
   end
   
   def create
@@ -31,7 +30,7 @@ class TweetsController < ApplicationController
       tweet.update(image: params[:image],text: tweet_params[:text])
     end
   end
-
+  
   
   def show
     @tweet = Tweet.find(params[:id])
